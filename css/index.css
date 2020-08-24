@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/*
+font-family: 'Open Sans', sans-serif;
+ */
+
+
+/********** Common **********/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+    max-width: 1500px;
+    margin: auto;
+    padding: 50px 24px;
+}
+.wrapper > .title {
+    font-weight: 400;
+    padding: 16px 0;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 40px;
+}
+
+
+/********** header **********/
+.header {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3); 
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 9;
+    padding: 8px 16px; 
+}
+.header .logo {
+    float: left;
+    font-size: 16px;
+    padding: 12px 16px;  
+    letter-spacing: 4px;  
+}
+.header .logo > span {
+    font-weight: lighter;
+}
+.logo:hover {
+    background: #ddd;
+    cursor: pointer;
+}
+.navi-wrap {
+    float: right;    
+}
+.navi {
+    float: left;
+    padding: 12px 16px;
+    letter-spacing: 4px;
+}
+.navi:hover {
+    background: #ddd;
+    cursor: pointer;
+}
+
+
+
+/********** main-wrap **********/
+.main-wrap {
+    max-width: 1500px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+.main-logo {
+    letter-spacing: 4px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+}
+.main-logo >:first-child {
+    background: black;
+    padding: 8px 16px;    
+    opacity: 0.7;
+}
+.main-logo >:last-child {
+    font-weight: lighter;
+}
+/********** prj-wrap **********/
+.prjs {
+    width: 101%;
+    margin-left: -0.5%;
+}
+.prj {
+    width: 24%;
+    float: left;
+    margin: 0 0.5%;
+    position: relative;
+}
+.prj > div {
+    background: black;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 12px 16px;
+}
+
+
+/********** about-wrap **********/
+.wrapper > .desc {
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom:  16px;
+}
+.persons {
+    width: 101%;
+    margin-left: -0.5%;
+}
+.person {
+    width: 24%;
+    margin: 0.5%;
+    float: left;
+}
+.person > .photo >img {
+    filter: grayscale(100%);
+}
+.person > .name {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 16px 0;
+}
+.person > .job {
+    padding: 8px 0;
+    font-weight: lighter;
+    font-size: 16px;
+    color: #666;
+}
+.person > .desc {
+    padding: 8px 0;
+}
+.person > .bts {
+    padding: 8px 0;
+}
+.person > .bts > button {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background: #ddd;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+.person > .bts > button:hover {
+    cursor: pointer;
+    background: #999;
+}
+/********** contact-wrap **********/
+.contact-form >input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 16px 0;
+    border: 1px solid #ddd;
+}
+.contact-form > button {
+    border: none;
+    background: #000;
+    color: white;
+    font-size: 16px;
+    padding: 12px 16px;
+    margin-top: 16px;
+}
+.contact-form > button:hover {
+    color: #000;
+    background: #ddd;
+    cursor: pointer;
+}
+/********** map-wrap **********/
+
+
+/********** footer **********/
+.footer {
+    background: #000;
+    text-align: center;
+    padding: 32px 0;
+    color: #fff;
+}
+.footer a {
+    color: #fff;
+}
+.footer a:hover {
+    color: #177934;
+}
+
+
+@media screen and (max-width: 767px){
+    .navi-wrap {display: none;}
+    .main-logo > :last-child {display: none;}
+    .prj {width: 49%;}
+    .person {width: 49%;}
+}
+
+@media screen and (max-width: 575px){
+    .prj {width: 99%;}
+    .person {width: 99%;}
+}
